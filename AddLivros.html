@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <script defer type="text/javascript" src = "codigo.js"></script>
+</head>
+
+<body>
+    <h1>
+        Nossas Referências
+    </h1>
+    <nav id="menu-horizontal">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="Programacao.html">Programação</a></li>
+            <li><a href="engSoftware.html">Engenharia de Software</a></li>
+            <li><a href="SistemaOperacional.html">Sistema Operacional</a></li>
+            <li><a href="AddLivros.html">Sugestão</a></li>
+
+        </ul>
+    </nav>
+
+    <section>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <fieldset>
+        <legend id="formshead"> Sugestão de livros de referências</legend>
+        
+        <p id ="pforms">
+        Deixe sua sugestão de livros que te ajudou ou você adotou recentemente em seu estudo e ensino.
+        </p>
+       
+        <div>
+            <label for="name">Nome: </label>
+        <input
+        type="text"
+        id="name"
+        name="txtNome"
+        placeholder="Nome"
+        required
+        />
+        </div>
+        <div>
+        <label for="mail">Email: </label>
+        <input type="email" id="mail" name="txtMail" placeholder="E-Mail"/>
+        </div>
+
+            <div>
+            <label for="optquem">Quem é você? </label>
+            <select id="cmbquem" name="optCmbquem">
+            <option value="professor" label="Professor"></option>
+            <option value="aluno" label="Aluno"></option>
+            </select>
+            </div>
+
+            <div>
+                <label for="msg">Sugestão: </label>
+                <textarea id="msg"></textarea>
+            </div>
+            <div>
+
+            <button type="button" onclick="Enviar()">Enviar</button>
+            
+
+            
+            </div>
+            </fieldset>
+            </section>
+            </form>
+        </section>
+
+
+
+    <div id="rodape">
+        <a href="https://unifei.edu.br/">UNIFEI</a>
+        <br>
+        Todos os direitos Reservados - 2023
+    </div>
+   
+</body>
+
+</html>
